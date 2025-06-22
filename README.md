@@ -61,6 +61,7 @@ LTV: Estimate as average revenue per customer (SUM(Sales) per Customer ID) multi
 CAC: Estimate as total marketing spend (assumed or external data) divided by new customers per Month-Year.
 
 Example Python script (ltv_cac.py):
+
               import pandas as pd
               df = pd.read_csv('data/aggregated_sales.csv')
               ltv = df.groupby('Customer ID')['Sales'].sum().mean() * 3  # Assume 3-year lifespan
@@ -73,11 +74,11 @@ Example Python script (ltv_cac.py):
 Connect Data Sources
 
 Create Worksheets:
-   * Revenue Trend: Line chart with Month-Year (Columns) and SUM(Sales) or Revenue (Rows).
-   * Burn Rate: Line chart with Month-Year (Columns) and Burn Rate (Rows).
-   * CAC: Line chart with Month-Year (Columns) and CAC (Rows).
-   * Cohort Analysis: Heatmap with Cohort Month (Columns), Month-Year (Rows), and SUM(Sales) (Color).
-   * LTV:CAC Ratio: Bar chart with Month-Year (Columns) and calculated LTV:CAC (Rows)
+     * Revenue Trend: Line chart with Month-Year (Columns) and SUM(Sales) or Revenue (Rows).
+     * Burn Rate: Line chart with Month-Year (Columns) and Burn Rate (Rows).
+     * CAC: Line chart with Month-Year (Columns) and CAC (Rows).
+     * Cohort Analysis: Heatmap with Cohort Month (Columns), Month-Year (Rows), and SUM(Sales) (Color).
+     * LTV:CAC Ratio: Bar chart with Month-Year (Columns) and calculated LTV:CAC (Rows)
 
 
 
