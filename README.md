@@ -73,7 +73,6 @@ Example Python script (ltv_cac.py):
 
 1. Connect Data Sources
 2. Create Worksheets:
-
     * Revenue Trend: Line chart with Month-Year (Columns) and SUM(Sales) or Revenue (Rows).
     * Burn Rate: Line chart with Month-Year (Columns) and Burn Rate (Rows).
     * CAC: Line chart with Month-Year (Columns) and CAC (Rows). 
@@ -84,6 +83,6 @@ Example Python script (ltv_cac.py):
 
 **Deliverables**
 
-* **Tableau Dashboard:**Financial_KPI_Dashboard.twbx (visualizes revenue, burn rate, CAC, LTV:CAC, and cohort trends).
+* **Tableau Dashboard:** Financial_KPI_Dashboard.twbx (visualizes revenue, burn rate, CAC, LTV:CAC, and cohort trends).
 * **LTV:CAC Report:** LTV_CAC_Report.pdf.
 * **Excel Model Template:** Financial_KPI_Model.xlsx (for KPI calculations and data input).
