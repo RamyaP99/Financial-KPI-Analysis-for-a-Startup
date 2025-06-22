@@ -6,6 +6,7 @@ This project analyzes key financial performance indicators (KPIs) for an early-s
 
 **Dataset**
 
+AWS SaaS Sales Dataset: https://www.kaggle.com/datasets/nnthanh101/aws-saas-sales
 
 
 **Objectives**
@@ -28,7 +29,7 @@ Tableau: For building an interactive dashboard.
 
 Python (Pandas): For data cleaning, aggregation, and cohort analysis.
 
-#### Data Preparation
+### Data Preparation
 
 1. Download the Dataset
 2. Preprocess Data
@@ -37,7 +38,7 @@ Python (Pandas): For data cleaning, aggregation, and cohort analysis.
    * Create **monthly_burn_rate.csv**: Estimate burn rate (e.g., assume fixed monthly expenses or derive from Profit if negative).
    * Create **monthly_CAC.csv**: Estimate CAC (e.g., marketing costs divided by new customers per month; assume constant marketing spend if not provided).
      
-#### Excel Model Template
+### Excel Model Template
 
 **Create Template:**
 
@@ -52,7 +53,7 @@ Include sheets:
 
    Add formulas for calculations (e.g., =B2/C2 for LTV:CAC ratio).
 
-#### LTV:CAC Report in PDF
+### LTV:CAC Report in PDF
 
 Calculate LTV and CAC:
 
@@ -69,7 +70,7 @@ Example Python script (ltv_cac.py):
               ltv_cac_ratio = ltv / cac
               print(f"LTV: ${ltv:.2f}, CAC: ${cac:.2f}, LTV:CAC: {ltv_cac_ratio:.2f}")
 
-#### Tableau Dashboard
+### Tableau Dashboard
 
 1. Connect Data Sources
 2. Create Worksheets:
