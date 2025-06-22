@@ -75,9 +75,10 @@ Connect Data Sources
 
 Create Worksheets:
 
-    * Revenue Trend: Line chart with Month-Year (Columns) and SUM(Sales) or Revenue (Rows).
-    * Burn Rate: Line chart with Month-Year (Columns) and Burn Rate (Rows).
+  * Revenue Trend: Line chart with Month-Year (Columns) and SUM(Sales) or Revenue (Rows).
+  * Burn Rate: Line chart with Month-Year (Columns) and Burn Rate (Rows).
     * CAC: Line chart with Month-Year (Columns) and CAC (Rows).
+      
     * Cohort Analysis: Heatmap with Cohort Month (Columns), Month-Year (Rows), and SUM(Sales) (Color).
     * LTV:CAC Ratio: Bar chart with Month-Year (Columns) and calculated LTV:CAC (Rows)
 
