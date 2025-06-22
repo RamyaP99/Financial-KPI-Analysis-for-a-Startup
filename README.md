@@ -16,9 +16,9 @@ This project analyzes key financial performance indicators (KPIs) for an early-s
 4. Perform cohort analysis for monthly customer groups.
 5. Deliver:
 
-   * Tableau dashboard visualizing KPIs and trends.
-   * LTV:CAC report in PDF format.
-   * Excel model template for KPI calculations.
+   * **Tableau dashboard** visualizing KPIs and trends.
+   * **LTV:CAC report** in PDF format.
+   * **Excel model template** for KPI calculations.
 
 **Tools**
 
@@ -33,9 +33,9 @@ Python (Pandas): For data cleaning, aggregation, and cohort analysis.
 1. Download the Dataset
 2. Preprocess Data
 3. Prepare Additional Datasets:
-   * Create monthly_revenue.csv: Aggregate Sales by Month-Year.
-   * Create monthly_burn_rate.csv: Estimate burn rate (e.g., assume fixed monthly expenses or derive from Profit if negative).
-   * Create monthly_CAC.csv: Estimate CAC (e.g., marketing costs divided by new customers per month; assume constant marketing spend if not provided).
+   * Create **monthly_revenue.csv**: Aggregate Sales by Month-Year.
+   * Create **monthly_burn_rate.csv**: Estimate burn rate (e.g., assume fixed monthly expenses or derive from Profit if negative).
+   * Create **monthly_CAC.csv**: Estimate CAC (e.g., marketing costs divided by new customers per month; assume constant marketing spend if not provided).
      
 #### Excel Model Template
 
@@ -44,11 +44,11 @@ Python (Pandas): For data cleaning, aggregation, and cohort analysis.
 Open Excel and create a workbook (kpi_model.xlsx).
 
 Include sheets:
- * Revenue: Columns for Month-Year, Revenue (from monthly_revenue.csv).
- * Burn Rate: Columns for Month-Year, Burn Rate (assumed or derived).
- * CAC: Columns for Month-Year, New Customers, Marketing Spend, CAC (calculated as Marketing Spend / New Customers).
- * LTV: Columns for Customer ID, Total Sales, Lifespan, LTV (calculated as Total Sales * Lifespan).
- * LTV:CAC: Columns for Month-Year, LTV, CAC, LTV:CAC Ratio.
+ * **Revenue**: Columns for Month-Year, Revenue (from monthly_revenue.csv).
+ * **Burn Rate**: Columns for Month-Year, Burn Rate (assumed or derived).
+ * **CAC**: Columns for Month-Year, New Customers, Marketing Spend, CAC (calculated as Marketing Spend / New Customers).
+ * **LTV**: Columns for Customer ID, Total Sales, Lifespan, LTV (calculated as Total Sales * Lifespan).
+ * **LTV:CAC**: Columns for Month-Year, LTV, CAC, LTV:CAC Ratio.
 
    Add formulas for calculations (e.g., =B2/C2 for LTV:CAC ratio).
 
@@ -56,9 +56,9 @@ Include sheets:
 
 Calculate LTV and CAC:
 
-LTV: Estimate as average revenue per customer (SUM(Sales) per Customer ID) multiplied by average customer lifespan (assume 3 years if unknown).
+**LTV**: Estimate as average revenue per customer (SUM(Sales) per Customer ID) multiplied by average customer lifespan (assume 3 years if unknown).
 
-CAC: Estimate as total marketing spend (assumed or external data) divided by new customers per Month-Year.
+**CAC**: Estimate as total marketing spend (assumed or external data) divided by new customers per Month-Year.
 
 Example Python script (ltv_cac.py):
 
@@ -74,6 +74,7 @@ Example Python script (ltv_cac.py):
 Connect Data Sources
 
 Create Worksheets:
+
      * Revenue Trend: Line chart with Month-Year (Columns) and SUM(Sales) or Revenue (Rows).
      * Burn Rate: Line chart with Month-Year (Columns) and Burn Rate (Rows).
      * CAC: Line chart with Month-Year (Columns) and CAC (Rows).
