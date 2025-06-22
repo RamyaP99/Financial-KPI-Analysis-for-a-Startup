@@ -16,6 +16,6 @@ This project analyzes key financial performance indicators (KPIs) for an early-s
 4. Perform cohort analysis for monthly customer groups.
 5. Deliver:
 
-   Tableau dashboard visualizing KPIs and trends.
-   LTV:CAC report in PDF format.
-   Excel model template for KPI calculations.
+   * Tableau dashboard visualizing KPIs and trends.
+   * LTV:CAC report in PDF format.
+   * Excel model template for KPI calculations.
